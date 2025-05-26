@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+* {
+  .link {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+.danger {
+  color: rgb(172, 31, 31);
+}
+
+.p-toast .p-toast-message .p-toast-message-content {
+  padding: 1rem;
+}
+.p-toast .p-toast-message .p-toast-message-content .p-toast-message-text {
+  margin: 0 0 0 1rem;
+}
