@@ -9,11 +9,13 @@ const ConversationSchema = new Schema(
       unique: true,
     },
     sellerId: {
-      type: String,
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
       required: true,
     },
     buyerId: {
-      type: String,
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
       required: true,
     },
     readBySeller: {

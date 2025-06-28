@@ -6,11 +6,12 @@ import { useParams } from "react-router-dom";
 import CheckoutForm from "../../components/checkoutForm/CheckoutForm";
 
 const stripePromise = loadStripe(
-  "paste your public key"
+  import.meta.env.VITE_STRIPE_PUBLIC_KEY
 );
 
 const Pay = () => {
   const [clientSecret, setClientSecret] = useState("");
+  const [price, setPrice] = useState('');
 
   const { id } = useParams();
 
@@ -21,6 +22,7 @@ const Pay = () => {
           `/orders/create-payment-intent/${id}`
         );
         setClientSecret(res.data.clientSecret);
+        setPrice(res.data.price);
       } catch (err) {
         console.log(err);
       }
@@ -38,9 +40,12 @@ const Pay = () => {
 
   return <div className="pay">
     {clientSecret && (
+      <div className="px-16 py-10">
+        <h1 className="text-4xl mb-4">Complete Payment of ${price}</h1>
         <Elements options={options} stripe={stripePromise}>
           <CheckoutForm />
         </Elements>
+      </div>
       )}
   </div>;
 };

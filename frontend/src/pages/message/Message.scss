@@ -16,7 +16,9 @@
       flex-direction: column;
       gap: 20px;
       height: 500px;
-      overflow: scroll;
+      overflow: auto;
+      border: 0.5px solid rgb(232, 230, 230);
+      border-radius: 12px;
 
       .item {
         display: flex;
@@ -61,25 +63,12 @@
     }
 
     .write {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      textarea {
-        width: 80%;
-        height: 100px;
-        padding: 10px;
-        border: 1px solid lightgray;
-        border-radius: 10px;
-      }
-
       button{
         background-color: #1dbf73;
-        padding: 20px;
+        padding: 12px;
         color: white;
         font-weight: 500;
         border: none;
-        border-radius: 10px;
         cursor: pointer;
         width: 100px;
       }

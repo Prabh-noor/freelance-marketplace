@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.scss";
+import { FaGlobe } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -62,14 +63,13 @@ function Footer() {
             <span>ClearVoice</span>
             <span>Fiverr Workspace</span>
             <span>Learn</span>
-            <span>Working Not Working</span>
           </div>
         </div>
         <hr />
         <div className="bottom">
           <div className="left">
             <h2>fiverr</h2>
-            <span>© Fiverr International Ltd. 2023</span>
+            <span>© Fiverr International Ltd. 2025</span>
           </div>
           <div className="right">
             <div className="social">
@@ -80,8 +80,8 @@ function Footer() {
               <img src="/img/instagram.png" alt="" />
             </div>
             <div className="link">
-              <img src="/img/language.png" alt="" />
-              <span>English</span>
+              <FaGlobe />
+              <span>EN</span>
             </div>
             <div className="link">
               <img src="/img/coin.png" alt="" />

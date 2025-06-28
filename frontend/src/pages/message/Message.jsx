@@ -40,7 +40,7 @@ const Message = () => {
     <div className="message">
       <div className="container">
         <span className="breadcrumbs">
-          <Link to="/messages">Messages</Link> &gt; John Doe &gt;
+          <Link to="/messages">Messages</Link> &gt; seller1 &gt;
         </span>
         {isLoading ? (
           "loading"
@@ -60,9 +60,9 @@ const Message = () => {
           </div>
         )}
         <hr />
-        <form className="write" onSubmit={handleSubmit}>
-          <textarea type="text" placeholder="Write a message" />
-          <button type="submit">Send</button>
+        <form className="write flex items-end" onSubmit={handleSubmit}>
+          <textarea type="text" className="w-full border-2 h-12 p-2 rounded-l-lg border-[#cccccc] focus:outline-none focus:ring-0" placeholder="Write a message" />
+          <button type="submit" className="rounded-r-lg">Send</button>
         </form>
       </div>
     </div>
