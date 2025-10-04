@@ -79,7 +79,7 @@ const Add = () => {
   return (
     <div className="add">
       <div className="container">
-        <h1>Add New Gig</h1>
+        <h2 className="text-xl font-semibold mb-3">Add New Gig</h2>
         <div className="sections">
           <div className="info">
             <label htmlFor="">Title</label>

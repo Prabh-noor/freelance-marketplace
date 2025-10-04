@@ -147,7 +147,7 @@ function Home() {
             </p>
           </div>
           <div className="item">
-            <video src="./img/video.mp4" controls />
+            <video src="./img/video.webm" controls />
           </div>
         </div>
       </div>
